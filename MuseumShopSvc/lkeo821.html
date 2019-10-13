@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8">
+        <title>The Bob Doran Museum of Computing</title>
+        <link rel="stylesheet" type="text/css" href="lkeo821.css" />
+        <link rel="icon" href="http://redsox.uoa.auckland.ac.nz/ms/logo-192x192.png">
+        <script defer type="text/javascript" src="lkeo821.js"></script>
+    </head>
+    <body>
+        <nav>
+            <table id="navTable">
+                <tr id="navBar">
+                    <td id="logoContain" class="center" onclick="showTabHome();">
+                        <p class="title">
+                            <img id="logo" src="http://redsox.uoa.auckland.ac.nz/ms/logo.svg" alt="Museum Logo">
+                            <br/>The Bob Doran Museum of Computing
+                        </p>                           
+                    </td>
+                    <td id="navRadio1" class="center">
+                        <input type="radio" id="btnRadio1" name="control" checked="checked" onclick="showTabHome();"/>
+                            <label class="btn" for="btnRadio1">
+                                HOME<hr id="lineTabHome">
+                            </label>
+                    </td>
+                    <td id="navRadio2" class="center">
+                        <input type="radio" id="btnRadio2" name="control" onclick="showTabNews();"/>
+                    
+                        <label class="btn" for="btnRadio2">
+                            NEWS<hr id="lineTabHome">
+                        </label>
+                    </td>
+                    <td id="navRadio3" class="center">
+                        <input type="radio" id="btnRadio3" name="control" onclick="showTabDisplays();"/>
+                        <label class="btn" for="btnRadio3">
+                            DISPLAYS<hr id="lineTabDisplays">
+                        </label>
+                    </td>
+                    <td id="navRadio4" class="center">
+                        <input type="radio" id="btnRadio4" name="control" onclick="showTabGuestBook();"/>
+                        <label class="btn" for="btnRadio4">
+                            GUEST BOOK<hr id="lineTabGuestBook">
+                        </label>
+                    </td>
+                    <td id="navRadio5" class="center">
+                        <input type="radio" id="btnRadio5" name="control" onclick="showTabLogin();"/>
+                        <label class="btn" for="btnRadio5">
+                            LOGIN<hr id="lineTabLogin">
+                        </label>
+                    </td>
+                    <td id="navRadio6" class="center">
+                        <input type="radio" id="btnRadio6" name="control" onclick="showTabShop();"/>
+                        <label class="btn" for="btnRadio6">
+                            SHOP<hr id="lineTabShop">
+                        </label>
+                    </td>
+                    <td id="userNav" class="center">
+                        
+                    </td>
+                </tr>
+            </table>
+        </nav>
+        <div id="SectionHome">
+            <section>
+                <table>
+                    <tr>
+                        <td>
+                            Welcome to The Bob Doran Museum of Computing. You can learn more about the displays here. If you are intrigued by what you find here and live close to Auckland, or are visiting the city, please feel free to drop in to the school and see the displays for yourself. We are located at the University on Princes Street and are always open during normal office hours and also in the evenings and on the weekends when classes are in session.
+                        </td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+        <div id="SectionNews">
+            <section>
+                <p id="newsId">
+                    (ID Here)
+                </p>
+            </section>
+        </div>
+        <div id="SectionDisplays">
+            <div id="searchBarDisplay">
+                <input id="searchStringDisplay" type="text" placeholder="Search">
+                <!-- <button type="input" onclick="getSearchDisplay()">Submit</button> -->
+            </div>
+            <section>
+                <p id="displaysId">
+                    (ID Here)
+                </p>
+            </section>
+        </div>
+        <div id="SectionGuestBook">
+            <section>
+                        <form action="" method="post">
+                            <table id="commTable">
+                                <tr>
+                                    <td class="leftalign">
+                                        Name:
+                                    </td>
+                                    <td>
+                                        <input type="text" id="userName">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="inlineLeft"  >
+                                        Comment:
+                                    </td>
+                                    <td id="commentData">
+                                        <textarea id="commentBox" rows = "10" cols = "50"></textarea>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <iframe src="http://localhost:8188/MuseumService.svc/htmlcomments" id="guestBookId">
+                                            (ID Here)
+                                        </iframe>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <button type="button" id="commentSubmit" class="button" onclick="postGuestBook();">Submit</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+            </section>
+        </div>
+        <div id="SectionRegister">
+            <section>
+                <div id="regContainer">
+                    <div id="regCenter" class="subtitle">
+                        Registration
+                    </div>
+                    <form action="" method="post">
+                        <div class=col-25>
+                            <label for="regName">Name</label>
+                        </div>
+                        <div class=col-75>
+                            <input type="text" id="regName" required>
+                        </div>
+                        <div class=col-25>
+                            <label for="password">Password</label>
+                        </div>
+                        <div class=col-75>
+                            <input type="password" id="pass" required>
+                        </div>
+                        <div class=col-25>
+                            <label for="addressBox">Address</label>
+                        </div>
+                        <div id="addressData" class="col-75">
+                            <input type="text" id="addressBox" required></input>
+                        </div>
+                        <div id="haveLogin" class="formCondition">
+                            Already have an account? Login 
+                            <a class="anchor" onclick="showTabLogin();">here</a>.
+                        </div>
+                        <div id="regSubmit">
+                                <button id="regButton" type="button" class="button" onclick="postRegister();">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+        <div id="SectionLogin">
+            <section>
+                <div id="logContainer">
+                    <div id="logCenter" class="subtitle">
+                        Login
+                    </div>
+                    <form method="get">
+                        <div class=col-25>
+                            <label for="logName">Name</label>
+                        </div>
+                        <div class=col-75>
+                            <input type="text" id="logName" required>
+                        </div>
+                        <div class=col-25>
+                            <label for="password">Password</label>
+                        </div>
+                        <div class=col-75>
+                            <input type="password" id="logPass" required>
+                        </div>
+                        <div id="haveAccount" class="formCondition">
+                            Don't have an account? Create one
+                            <a class="anchor" onclick="showTabRegister();">here</a>.
+                        </div>
+                        <div id="logSubmit">
+                                <button id="loginButton" type="button" class="button" onclick="getLogin();">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+        <div id="overlay" onclick="off();"></div>
+        <div id="modal" onclick="off();"></div>
+        <div id="SectionShop">
+            <div id="searchBarShop">
+                <input id="searchStringShop" type="text" placeholder="Search">
+                <!-- <button type="input" onclick="getSearch()">Submit</button> -->
+            </div>
+            <section>
+                <p id="shopId">
+                    (ID Here)
+                </p>
+            </section>
+        </div>
+    </body>
+</html>

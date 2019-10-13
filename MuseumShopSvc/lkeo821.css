@@ -1,0 +1,406 @@
+/* @import url('https://fonts.googleapis.com/css?family=Antic+Didone|Open+Sans|Roboto+Condensed&display=swap'); */
+#logo
+{
+    width: 30%;
+    height: 30%;
+}
+#logoContain
+{
+    cursor: pointer;
+}
+html, body
+{
+    height: 100%;
+    /* height: auto;
+    padding: 0px;
+    margin: 0px; */
+    background-color: white;
+}
+body
+{
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: "Verdana";
+    line-height: 1.6;
+}
+#navTable
+{
+    width: 100%;
+}
+.httptable
+{
+    width: 125%;
+}
+tr
+{
+    line-height: 1.6;
+}
+.title
+{
+    /* font-family: 'Roboto Condensed', sans-serif; */
+    font-family: "Calibri";
+    font-weight: 500;
+    font-style: normal;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.subtitle
+{
+    /* font-family: 'Antic Didone', serif; */
+    font-family: "Calibri";
+    font-weight: 300;
+    font-style: normal;
+    font-size: 32px;
+}
+.date
+{
+    /* font-family: 'Antic Didone', serif; */
+    font-weight: 600;
+    font-style: normal;
+    font-size: 10px;
+}
+.center
+{
+    text-align: center;
+    max-width: 1px;
+}
+.justify
+{
+    text-align: justify;
+    max-width: 1px;
+}
+/* button
+{
+    padding: 5% 20%;
+    border: none;
+    outline:0;
+} */
+.button
+{
+    cursor: pointer;
+}
+section
+{
+    margin-top: 2%;
+    padding: 0% 20%;
+}
+hr
+{
+    border: 0;
+    height: 1px;
+    background-color: black;
+    display: none;
+}
+/* a
+{
+    text-decoration: none;
+    color: inherit;
+} */
+.btn
+{
+    font-family: Georgia,serif;
+    font-weight: normal;
+    font-size: 13px;
+    display: block;
+    cursor: pointer;
+}
+
+#btnRadio1 {
+    display: none;
+}
+#btnRadio2 {
+    display: none;
+}
+#btnRadio3 {
+    display: none;
+}
+#btnRadio4 {
+    display: none;
+}
+#btnRadio5 {
+    display: none;
+}
+#btnRadio6 {
+    display: none;
+}
+#navRadio1:hover > .btn > hr
+{
+    display: block;
+    cursor: pointer;
+}
+
+#navRadio2:hover > .btn > hr
+{
+    display: block;
+    cursor: pointer;
+}
+
+#navRadio3:hover > .btn > hr
+{
+    display: block;
+    cursor: pointer;
+}
+
+#navRadio4:hover > .btn > hr
+{
+    display: block;
+    cursor: pointer;
+}
+#navRadio5:hover > .btn > hr
+{
+    display: block;
+    cursor: pointer;
+}
+#navRadio6:hover > .btn > hr
+{
+    display: block;
+    cursor: pointer;
+}
+#btnRadio1:checked + label > hr 
+{
+
+	display: block;
+    height: 2px;
+}
+#btnRadio2:checked + label > hr 
+{
+	display: block;
+    height: 2px;
+}
+#btnRadio3:checked + label > hr 
+{
+	display: block;
+    height: 2px;
+}
+#btnRadio4:checked + label > hr 
+{
+	display: block;
+    height: 2px;
+}
+#btnRadio5:checked + label > hr 
+{
+	display: block;
+    height: 2px;
+}
+#btnRadio6:checked + label > hr 
+{
+	display: block;
+    height: 2px;
+}
+.image
+{
+    width: 90%;
+}
+.displayImage
+{
+    width: 90%;
+}
+figure
+{
+    width: 50%;
+}
+#wordphoto
+{
+    width: 100%;
+}
+#userName
+{
+    width: 100%;
+}
+#commentBox
+{
+    width: 100%;
+}
+.inlineLeft
+{
+    float: left;
+    
+}
+.inlineRight
+{
+    float: right;
+    
+}
+.leftalign
+{
+    text-align: left;
+}
+.rightalign
+{
+    text-align: right;
+}
+.col-25 
+{
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+.col-75 
+{
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+#commTable
+{
+    /* margin-left:auto;  */
+    /* margin-right:auto; */
+    text-align: center;
+}
+#guestBookId > ul > li
+{
+    list-style: none;
+}
+#searchBarDisplay
+{
+    width: 20%;
+    margin: 0 auto;
+}
+#searchStringDisplay
+{
+    /* float: left; */
+    display: block;
+    color: black;
+    text-align: center;
+    font-size: 18px;
+}
+#searchBarShop
+{
+    width: 20%;
+    margin: 0 auto;
+}
+#searchStringShop
+{
+    /* float: left; */
+    display: block;
+    color: black;
+    text-align: center;
+    font-size: 18px;
+}
+input[type=text], input[type=password], textarea
+{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    resize: vertical;
+}
+button.button {
+    background-color: #312f2f;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    /* width: 60%; */
+    margin: 2%;
+}
+button.button:hover
+{
+    background-color: #4b4747;
+}
+button.nostyle
+{
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 2px;
+    width: 75%;
+    margin: 2%;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    outline:none;
+}
+button.buyNowID
+{
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+/* .fa {
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.fa-search:before {
+    content: "\f002";
+} */
+#regCenter
+{
+    text-align: center;
+}
+#regContainer
+{
+    border-radius: 2px;
+    background-color: #f2f2f2;
+    padding: 20px 10%;
+}
+#regSubmit
+{
+    text-align: center;
+}
+#logCenter
+{
+    text-align: center;
+}
+#logContainer
+{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px 10%;
+}
+#logSubmit
+{
+    text-align: center;
+}
+.formCondition
+{
+    font-size: 11px;
+    text-align: center;
+}
+.anchor
+{
+    cursor: pointer;
+    text-decoration: underline;
+}
+#overlay 
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+#modal
+{
+    width: 350px;
+    height: 200px;
+    line-height: 200px;
+    position: fixed;
+    text-align: center;
+    top: 50%; 
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -150px;
+    background-color: white;
+    border-radius: 2px;
+    cursor: pointer;
+    z-index: 11; /* 1px higher than the overlay layer */
+}
+span 
+{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+/* #userNav
+{
+    display: table-cell;
+} */
