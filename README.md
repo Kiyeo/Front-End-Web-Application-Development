@@ -21,3 +21,21 @@ In the MusemSvc and MuseumShopSvc folders, the web.config file Data Root value m
 The view the application on the browser, type/copy in the following into the browser:
 
 * `http://localhost:8189/lkeo821.html` 
+
+![Figure 1](/Figure1.png)
+Figure 1
+
+![Figure 2](/Figure2.png)
+Figure 2
+
+![Figure 3](/Figure3.png)
+Figure 3
+
+![Figure 4](/Figure4.png)
+Figure 4
+
+![Figure 5](/Figure5.png)
+Figure 5
+
+![Figure 6](/Figure6.png)
+Figure 6
